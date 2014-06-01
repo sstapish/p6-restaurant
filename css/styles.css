@@ -2,13 +2,13 @@
 
 /*Gloabal*/
 
-/*body {
+body {
 	background: url("../img/bamboo.png");
 	background-repeat: repeat;
-}*/
-body {
-	background: #000;
 }
+/*body {
+	background: #000;
+}*/
 
 img[src*="sushi-maru"] {
 	margin: 2em 0;
