@@ -1,6 +1,15 @@
 /* My Styles */
 
 /*Gloabal*/
+
+/*body {
+	background: url("../img/bamboo.png");
+	background-repeat: repeat;
+}*/
+body {
+	background: #000;
+}
+
 img[src*="sushi-maru"] {
 	margin: 2em 0;
 }
@@ -9,8 +18,31 @@ iframe {
 	margin-top: 2em;
 }
 
+.panel {
+	background: #c6c58f;
+}
+
 /* Typography */
 
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: gray;
+}
+
 p {
-	
+	color: #C8C9CA;
+}
+
+.sub-nav dt.active a, 
+.sub-nav dd.active a, 
+.sub-nav li.active a {
+	background: #DA0A12;
+}
+
+.sub-nav dd.active a:hover,
+.sub-nav dd.active a:active {
+	background: #C0060D;
 }
