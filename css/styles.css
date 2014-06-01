@@ -1,7 +1,13 @@
 /* My Styles */
 
 /*Gloabal*/
+img[src*="sushi-maru"] {
+	margin: 2em 0;
+}
 
+iframe {
+	margin-top: 2em;
+}
 
 /* Typography */
 
