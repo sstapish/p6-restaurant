@@ -93,6 +93,32 @@ div.filter h5:active {
   background: #d9261c;
   
 }
+/* Prices and colors for Menu 
+
+div[data-myorder*="1.50"] {
+  background: yellow;
+}
+
+div[data-myorder*="2.25"] {
+  background: cornflowerblue;
+}
+
+div[data-myorder*="2.75"] {
+  background: red;
+}
+
+div[data-myorder*="3.25"] {
+  background: purple;
+}
+
+div[data-myorder*="3.75"] {
+  background: blue;
+}
+
+div[data-myorder*="4.50"] {
+  background: green;
+}*/
+
 
 /* Mix It Up */
 #Container .mix{
