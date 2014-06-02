@@ -20,7 +20,7 @@ iframe {
 }
 
 .panel {
-	background: #c6c58f;
+	background: #d3fcc4;
 }
 
 select {
@@ -34,12 +34,18 @@ li {
 	list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
 	color: gray;
+	font-family: 'Merriweather', serif;
 }
 
-p {
+h5 {
+	font-weight: bold;
+}
+
+h6, p {
 	color: #C8C9CA;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .sub-nav dt.active a, 
