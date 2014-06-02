@@ -10,6 +10,7 @@ body {
 	background: #000;
 }*/
 
+/* Layout */
 img[src*="sushi-maru"] {
 	margin: 2em 0;
 }
@@ -20,6 +21,11 @@ iframe {
 
 .panel {
 	background: #c6c58f;
+}
+
+select {
+	
+	max-width: 200px;
 }
 
 /* Typography */

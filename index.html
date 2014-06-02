@@ -7,9 +7,11 @@
     <title>Sushi Maru</title>
     
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/filtrify.css">
     <link rel="stylesheet" href="css/styles.css" />    
     
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/fitrify.js"></script>
   
   </head>
   
@@ -108,9 +110,13 @@
 
         <!-- Location -->
         <div class="large-8 small-12 columns">
+
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2687.2601692982275!2d-117.42377399999998!3d47.659941999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4100979c0cf5d029!2sSushi+Maru!5e0!3m2!1sen!2sus!4v1401600524460" width="600" height="300" frameborder="0" style="border:0"></iframe>
-          
-          <h3 class="hide-for-small-only">Revolving Sushi</h3>
+
+          <div class="hide-for-small-only">
+
+          <h3 >Revolving Sushi</h3>
+
           <p>Also called sushi-go-round, mainly by foreigners living in Japan, is the popular English translation for Japanese fast-food sushi. In Australia, it is also known as sushi-train (as the sushi goes around a track on a train rather than a conveyor belt. In South Korea, conveyor belt sushi has become popular and is known as “revolving sushi”. Kaiten-sushi is a sushi restaurant where the plates with the sushi are placed on a rotating conveyor belt that winds through the restaurant and moves past every table and counter seat. Customers may place special orders but most simply pick their selections from a steady stream of fresh sushi moving along the conveyor belt.  The final bill is based on the number and color of plates of the consumed sushi.</p>
 
         </div>
@@ -120,20 +126,35 @@
       <!-- Menu -->
        <div class="row">
 
-        <div class="large-12 columns">
-          <div class="row">
+        <div id="placeHolder"></div>
+
+        <div class="large-12 columns" id="container">
             
             <h1>Menu</h1>
 
-          <dl class="sub-nav">
-            <dt>Filter:</dt>
-            <dd class="active"><a href="#">All</a></dd>
-            <dd><a href="#">Price</a></dd>
-            <dd><a href="#">Vegetarian</a></dd>
-            <dd><a href="#">Spicy</a></dd>
-          </dl>
+          <!-- Menu options -->
+          <div>
+          <label for="selections">Menu Options</label><br>
+          <select name="selections" id="selections">
+            <optgroup label="Types">
+              <option>All</option>
+              <option>Raw</option>
+              <option>Spicy</option>
+              <option>Vegetarian</option>
+            </optgroup>
+            <optgroup label="Price">
+              <option>$1.50</option>
+              <option>$2.25</option>
+              <option>$2.75</option>      
+              <option>$3.25</option>
+              <option>$3.75</option>
+              <option>$4.50</option>
+             </optgroup>
+          </select>
+          </div>
+          <!-- End menu options -->
 
-            <div class="large-3 medium-4 small-6 columns">
+            <div class="large-3 medium-4 small-6 columns" data-type="vegetarian, all" data-price="$1.50">
               <img src="img/cucumber_small.jpg">
  
               <div class="panel">
@@ -141,7 +162,7 @@
               </div>
             </div>
  
-            <div class="large-3 medium-4 small-6 columns">
+            <div class="large-3 medium-4 small-6 columns" data-type="all" data-price="$2.25">
               <img src="img/nigiri_small.jpg">
  
               <div class="panel">
@@ -149,7 +170,7 @@
               </div>
             </div>
  
-            <div class="large-3 medium-4 small-6 columns">
+            <div class="large-3 medium-4 small-6 columns" data-type="spicy, raw, all" data-price="$2.75">
               <img src="img/spicytuna_small.jpg">
  
               <div class="panel">
@@ -234,7 +255,7 @@
  
           </div>
         </div>
-      </div>
+   
 
  <!-- footer -->
       <footer class="row">
