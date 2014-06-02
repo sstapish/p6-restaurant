@@ -28,6 +28,18 @@ select {
 	max-width: 200px;
 }
 
+div.filter {
+  display: inline-block;
+  margin: 0 1em;
+  
+}
+
+div.filter h5 {
+  padding: .25em .5em;
+  border-radius: 5px;
+  background: #880C0C;
+}
+
 /* Typography */
 
 li {
@@ -35,7 +47,7 @@ li {
 }
 
 h1, h2, h3, h4, h5 {
-	color: gray;
+	color: #C8C9CA;
 	font-family: 'Merriweather', serif;
 }
 
@@ -47,7 +59,7 @@ h6, p {
 	color: #C8C9CA;
 	font-family: 'Montserrat', sans-serif;
 }
-
+/* links */
 .sub-nav dt.active a, 
 .sub-nav dd.active a, 
 .sub-nav li.active a {
@@ -57,6 +69,12 @@ h6, p {
 .sub-nav dd.active a:hover,
 .sub-nav dd.active a:active {
 	background: #C0060D;
+}
+
+div.filter h5:hover,
+div.filter h5:active {
+  background: #B40B0B;
+  
 }
 
 /* Mix It Up */
