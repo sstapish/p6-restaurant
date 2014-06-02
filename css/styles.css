@@ -20,7 +20,7 @@ iframe {
 }
 
 .panel {
-	background: #d3fcc4;
+	background: #880C0C;
 }
 
 select {
@@ -37,7 +37,8 @@ div.filter {
 div.filter h5 {
   padding: .25em .5em;
   border-radius: 5px;
-  background: #880C0C;
+   background: #B40B0B;
+  
 }
 
 /* Typography */
@@ -66,6 +67,15 @@ h6, p {
 	color: #C8C9CA;
 	font-family: 'Montserrat', sans-serif;
 }
+
+.panel h3,
+.panel h5,
+.panel h6,
+.panel li,
+.panel span {
+  color: #C8C9CA;
+}
+
 /* links */
 .sub-nav dt.active a, 
 .sub-nav dd.active a, 
@@ -80,7 +90,7 @@ h6, p {
 
 div.filter h5:hover,
 div.filter h5:active {
-  background: #B40B0B;
+  background: #d9261c;
   
 }
 
