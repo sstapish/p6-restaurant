@@ -47,9 +47,16 @@ li {
 }
 
 h1, h2, h3, h4, h5 {
-	color: #C8C9CA;
-	font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
 }
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+ h4, h5 {
+color: #C8C9CA;
+ }
 
 h5 {
 	font-weight: bold;
