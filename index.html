@@ -7,11 +7,10 @@
     <title>Sushi Maru</title>
     
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/filtrify.css">
     <link rel="stylesheet" href="css/styles.css" />    
     
     <script src="js/vendor/modernizr.js"></script>
-    <script src="js/fitrify.js"></script>
+    
   
   </head>
   
@@ -69,7 +68,7 @@
         </div>
       </div>
     <!-- Masthead -->
-      <header class="row">
+      <header class="row hide-for-small">
       <div class="large-12 columns">
         
         <img src="img/background5.jpg" alt="">
@@ -84,7 +83,7 @@
         <!-- Logo -->
           <img src="img/sushi-maru.png">
  
-          <div class="hide-for-small panel radius">
+          <div class="panel radius">
             <h3>Contact</h3>
             <h5 class="subheader">Phone
             </h5>
@@ -126,14 +125,14 @@
       <!-- Menu -->
        <div class="row">
 
-        <div id="placeHolder"></div>
+        <div></div>
 
         <div class="large-12 columns" id="container">
             
             <h1>Menu</h1>
 
-          <!-- Menu options -->
-          <div id="placeHolder">
+          <!-- Menu options
+          <div>
           <label for="selections">Menu Options</label><br>
           <select name="selections" id="selections">
             <optgroup label="Types">
@@ -152,131 +151,127 @@
              </optgroup>
           </select>
           </div>
-          <!-- End menu options -->
-          <ul>
-            <li data-type="vegetarian, all" data-price="$1.50">
-            <div class="large-3 medium-4 small-6 columns" >
-              <img src="img/cucumber_small.jpg">
- 
-              <div class="panel">
-                <span data-tooltip class="has-tip" title="Cucumber Roll">Cucumber Roll</span>
-              </div>
+           End menu options -->
+           <div class="filter" data-filter=".all"><h5>All</h5></div>
+
+          <div class="filter" data-filter=".vegetarian"><h5>Vegetarian</h5></div>
+
+          <div class="filter" data-filter=".raw"><h5>Raw</h5></div>
+
+          <div class="filter" data-filter=".spicy"><h5>Spicy</h5></div>
+
+
+        <div id="Container">
+
+          <div class="large-3 medium-4 small-6 columns mix vegetarian all" data-price="1.50"  data-filter="all, vegetarian">
+            <div>
+             <img src="img/sushi/cucumber_small.jpg">
             </div>
-            </li>
-            
-            
-            <div class="large-3 medium-4 small-6 columns" >
-              <img src="img/nigiri_small.jpg">
- 
+              <div class="panel">
+                 <span data-tooltip class="has-tip" title="Cucumber Roll">Cucumber Roll</span>
+              </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix raw all" data-myorder="2.25" data-filter="all, raw">
+            <div>
+            <img src="img/sushi/nigiri_small.jpg">
+            </div>
               <div class="panel">
                 <span data-tooltip class="has-tip" title="Small rice balls topped with Albacore">Albacore Nigiri</span>
               </div>
+          </div>
+          
+          <div class="large-3 medium-4 small-6 columns mix all raw spicy" data-myorder="2.75" data-filter="raw, spicy, all">
+            <div>
+              <img src="img/sushi/spicytuna_small.jpg">
             </div>
-            
-            
-            <li data-type="spicy, raw, all" data-price="$2.75">
-            <div class="large-3 medium-4 small-6 columns">
-              <img src="img/spicytuna_small.jpg">
- 
               <div class="panel">
-                <span data-tooltip class="has-tip" title="Ground spicy tuna with cucumber and Kaiware topped with Unagi Sauce and sesame seeds">Spicy Tuna Roll</span>
+                 <span data-tooltip class="has-tip" title="Ground spicy tuna with cucumber and Kaiware topped with Unagi Sauce and sesame seeds">Spicy Tuna Roll</span>
               </div>
+          </div>
+      
+          <div class="large-3 medium-4 small-6 columns mix raw all" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/orangeroll_small.jpg">
             </div>
-            
-            
-           
-            <div class="large-3 medium-4 small-6 columns">
-              <img src="img/orangeroll_small.jpg">
- 
               <div class="panel">
                 <span data-tooltip class="has-tip" title="California Roll with Masago (smelt roe)">Orange Roll</span>
               </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix raw all spicy" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/thunder_small.jpg">
             </div>
-           
-            
-          
-            <div class="large-3 medium-4 small-6 columns">
-              <img src="img/thunder_small.jpg">
- 
               <div class="panel">
                 <span data-tooltip class="has-tip" title="California roll with tuna, sriracha and Wasabi mayo">Thunder Roll</span>
               </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix vegetarian all" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/spring-rolls_small.jpg">
             </div>
-        
-            
-           
-             <div class="large-3 medium-4 small-6 columns">
-              <img src="img/spring-rolls_small.jpg">
- 
               <div class="panel">
                 <span data-tooltip class="has-tip" title="Fried veggie spring rolls with cabbage and carrots">Spring Rolls</span>
               </div>
-            </div>
-            
-            
-         
-           <div class="large-3 medium-4 small-6 columns">
-            <img src="img/tuna-poki_small.jpg">
-
-            <div class="panel">
-              <span data-tooltip class="has-tip" title="Cubed fresh tuna and greens tossed in soy vinagrette topped with sesame seeds">Tuna Poki Salad</span>
-            </div>
           </div>
-        
 
-            <div class="large-3 medium-4 small-6 columns">
-              <img src="img/playboy_small.jpg">
- 
+          <div class="large-3 medium-4 small-6 columns mix raw all" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/tuna-poki_small.jpg">
+            </div>
+              <div class="panel">
+                <span data-tooltip class="has-tip" title="Cubed fresh tuna and greens tossed in soy vinagrette topped with sesame seeds">Tuna Poki Salad</span>
+              </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix all" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/playboy_small.jpg">
+            </div>
               <div class="panel">
                 <span data-tooltip class="has-tip" title="Shrimp tempura with spicy crab mix topped with fresh tuna, unagi sauce, spicy mayo, panko crumbs and different colored tobiko (flying fish roe)">Playboy</span>
               </div>
-            </div>
-           
+          </div>
 
-           
-             <div class="large-3 medium-4 small-6 columns">
-              <img src="img/sashimi_small.jpg">
- 
+          <div class="large-3 medium-4 small-6 columns mix all raw" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/sashimi_small.jpg">
+            </div>
               <div class="panel">
                 <span data-tooltip class="has-tip" title="4 pieces of tuna served sashami style">Tuna Sashimi</span>
               </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix all"
+          data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/dragon_small.jpg">
             </div>
-            
-            
-           
-            <div class="large-3 medium-4 small-6 columns">
-              <img src="img/dragon_small.jpg">
- 
               <div class="panel">
                 <span data-tooltip class="has-tip" title="California Roll topped with Baked Unagi">Dragon Roll</span>
               </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix all raw" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/rainbow_small.jpg">
             </div>
-          
-              
-             
-             <div class="large-3 medium-4 small-6 columns">
-              <img src="img/rainbow_small.jpg">
- 
               <div class="panel">
                 <span data-tooltip class="has-tip" title="California roll topped with salmon, tuna, Izumidai and avocado">Rainbow Roll</span>
               </div>
+          </div>
+
+          <div class="large-3 medium-4 small-6 columns mix all vegetarian" data-myorder="2.75" data-filter="raw">
+            <div>
+              <img src="img/sushi/inari_small.jpg">
             </div>
-         
-            
-           
-            <div class="large-3 medium-4 small-6 columns">
-              <img src="img/inari_small.jpg">
- 
               <div class="panel">
                 <span data-tooltip class="has-tip" title="Sushi rice is filled into aburaage (deep fried tofu) bags.">Inari</span>
               </div>
-            </div>
           </div>
-          
- 
-     
- 
-          </div>
+
         </div>
    
 
@@ -310,6 +305,7 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/mixitup.js"></script>
     <script src="js/scripts.js"></script>
   
   </body>

@@ -1,9 +1,10 @@
 // My Scripts
 $(document).foundation();
 
+$(function(){
 
-$(function() {
+	// Instantiate MixItUp:
 
-    $.filtrify("container", "placeHolder");
+	$('#Container').mixItUp();
 
 });

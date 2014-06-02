@@ -3,7 +3,7 @@
 /*Gloabal*/
 
 body {
-	background: url("../img/bamboo.png");
+	background: url("../img/blackorchid.png");
 	background-repeat: repeat;
 }
 /*body {
@@ -24,7 +24,7 @@ iframe {
 }
 
 select {
-	
+
 	max-width: 200px;
 }
 
@@ -51,4 +51,61 @@ p {
 .sub-nav dd.active a:hover,
 .sub-nav dd.active a:active {
 	background: #C0060D;
+}
+
+/* Mix It Up */
+#Container .mix{
+	display: none;
+}
+
+.container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+
+.container .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
 }
